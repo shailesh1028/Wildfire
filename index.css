@@ -1,0 +1,231 @@
+
+		body{
+
+		}
+		#Video{
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			min-width: 100%; 
+    		min-height: 100%;
+			z-index: -1;
+		}
+		#line-right{
+			position: absolute;
+			top: 0%;
+			right: 50%;
+			bottom: 0%;
+			height: 100%;
+			width: 3px;
+			background-color: white;
+			animation-name: trans-r;
+			animation-duration: 2s;
+			animation-timing-function: ease-in;
+			animation-fill-mode: both;
+			animation-iteration-count: 1;		
+		}
+		@keyframes trans-r{
+			0% {transform: translateX(0vw);}
+			100% {transform: translateX(40vw);}
+		}
+		#line-left{
+			position: absolute;
+			top: 0%;
+			left: 50%;
+			bottom: 0%;
+			height: 100%;
+			width: 3px;
+			background-color: white;
+			animation-name: trans-l;
+			animation-duration: 2s;
+			animation-timing-function: ease-in;
+			animation-fill-mode: both;
+			animation-iteration-count: 1;		
+		}
+		@keyframes trans-l{
+			0% {transform: translateX(0);}
+			100% {transform: translateX(-40vw);}
+		}
+		#line-top{
+			position: absolute;
+			top: 50%;
+			left: 0%;
+			right:0%;
+			height: 3px;
+			width: 100%;
+			background-color: white;
+			animation-name: trans-t;
+			animation-duration: 2s;
+			animation-timing-function: ease-in;
+			animation-fill-mode: both;
+			animation-iteration-count: 1;		
+		}
+		@keyframes trans-t{
+			0% {transform: translateY(0);}
+			100% {transform: translateY(-40vh);}
+		}
+		#line-bottom{
+			position: absolute;
+			top: 50%;
+			left: 0%;
+			right:0%;
+			height: 3px;
+			width: 100%;
+			background-color: white;
+			animation-name: trans-b;
+			animation-duration: 2s;
+			animation-timing-function: ease-in;
+			animation-fill-mode: both;
+			animation-iteration-count: 1;		
+		}
+		@keyframes trans-b{
+			0% {transform: translateY(0px);}
+			100% {transform: translateY(40vh);}
+		}
+		#body-content{
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            bottom: 10%;
+            right: 10%;
+            /*border: solid white 3px;
+            border-radius: 8px;*/ 
+        }
+		#body-main {
+            position: absolute;
+            color: white;
+            top: 0%;
+            bottom: 0%;
+            right: 0%;
+            left: 0%;
+            background-color:rgba(49, 50, 51,0.6);
+            overflow-y: scroll;
+        }
+        
+		#main-sf{
+			position:absolute;
+			top: 10%;
+			left: 10%;
+			font-size: 40px;
+		}
+		#main-presents{
+			position:absolute;
+			left:24%;
+			top: 25%;
+		}
+		#main-wildfire{
+			position:absolute;
+			top: 50%;
+			/*bottom:15%;*/
+			left: 20%;
+			font-size: 80px;
+		}
+		#main-dum{
+			position: absolute;
+			top: 200%;
+		}
+        #body-area{
+        	position: absolute;
+            color: white;
+            top: 0%;
+            bottom:0%;
+            right: 0%;
+            left: 0%;
+            background-color:rgba(49, 50, 51,0.6);
+            display: none;
+        }
+        #menu-list{
+        	position:absolute;
+        	top: 0%;
+        	right:0%;
+        	height: 10%; 
+        }
+        .list-items{
+        	float:left;
+        	color:white;
+        	list-style-type: none;
+        	padding-right: 60px;
+        }
+        .list-items-a{
+        	color:white;
+        	text-decoration: none;
+        }
+        #body-sum{
+        	position: absolute;
+        	top: 10%;
+        	left:0%;
+        	right: 0%;
+        	bottom:0%;
+        	overflow-y: scroll;
+        }
+        #about{
+        	position:absolute;
+        	top:10%;
+        	left: 10%;
+        	right: 10%;
+        	}
+        #rules{
+        	position: absolute;
+        	top:120%;
+        	left: 10%;
+        	right: 10%;
+        	border: 2px solid black;
+        }
+        #register{
+        	position:absolute;
+        	top:220%;
+        	left: 10%;
+        	right: 10%;
+        	height:90%;
+        	border: 2px solid black;
+        }
+        #head-reg{
+        	position:relative;
+        	top: 0%;
+        }
+        #reg-form{
+        	position:relative;
+        	top:30%;
+        	left:10%;
+        	width: 60%;
+        	bottom: 10%;
+        	border: 2px solid white;
+        }
+        .form-items{
+        	padding: 12px;
+        	margin: 10px;
+        }
+
+
+
+        #bass{
+			position:absolute;
+			top: 40%;
+			left: 20%;
+			height: 40vh;
+			width: 50vh;
+		}
+		#line1{
+			position:absolute;
+			background-color: 
+			box-sizing: content-box;
+			top:0%;
+			left:0%;
+			height:10vh;
+			width: 5vh;
+			border-left: 1px solid black;
+			border-top: 1px solid black;
+			transition-property: width;
+
+			animation-name: movea;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+			animation-direction: normal;
+		}
+		@keyframes movea{
+			0% {trans: translateY(10vh);}
+			25% {transition: height(20vh);}
+			75% {transition: height(30vh);}
+			0% {transition: height(38vh);}
+		}
