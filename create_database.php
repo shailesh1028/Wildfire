@@ -19,5 +19,3 @@ catch(PDOException $e)
 
 $conn = null;
 ?>
-
-    VALUES (".$name.",".$username.",".$password.",".$mobile.",".$email.",".$status.",".$level.",".$date.")";
