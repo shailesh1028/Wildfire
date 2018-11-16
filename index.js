@@ -8,12 +8,10 @@
 	}
 
 	function visible(){
-	 	$("#main-sf").addClass("animated fadeOut delay-0.5s");
-	  	$("#main-presents").addClass("animated fadeOut delay-0.5s");
-	   	$("#main-wildfire").addClass("animated rollOut delay-0.5s");
-	    $("#body-area").addClass("animated fadeIn delay-1s");
-	    $("#body-main").css("display", "none");
-	    $("#body-area").css("display", "block");
+		$("#body-main").addClass('fadeout');
+	 	$("#body-area").css('display','block',function(){
+	 		$("#body-area").addClass("animated fadeIn delay-1s")});
+	    $("#body-area").scrollTop(0);
 	}
 
 	function show_member(a){
@@ -21,6 +19,7 @@
 			n:a
 		},
 		    function(data){
+		    	$("#mem_size").css('display','block');
 		        $("#mem_size").html(data);
 	    });
 	 }
