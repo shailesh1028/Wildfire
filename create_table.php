@@ -16,6 +16,7 @@
         insti VARCHAR(30) NOT NULL,
         size int(8) NOT NULL,
         city VARCHAR(20) NOT NULL,
+        url VARCHAR(1000) NOT NULL,
         member2 VARCHAR(30),
         mobile2 int(11),
         member3 VARCHAR(30),
