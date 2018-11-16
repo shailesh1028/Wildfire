@@ -7,6 +7,7 @@
 	$insti=$_POST['insti'];
 	$size=$_POST['size'];
 	$city=$_POST['city'];
+	$url=$_POST['url'];
 	$n=$size;
 	$member2=null;
 	$mobile2=null;
@@ -47,7 +48,7 @@
 	}
 	
 	$stmt = $conn->prepare("INSERT INTO userinfo (name,grpname,email,mobile,insti,size,city,member2,mobile2,member3,mobile3,member4,mobile4,member5 ,mobile5 ,member6 ,mobile6,member7,mobile7 )
-    VALUES ('".$name."' , '".$grpname."' , '".$email."' , '".$mobile."' , '".$insti."' , '".$size."' , '".$city."' , '".$member2."' , '".$mobile2."' , '".$member3."' , '".$mobile3."' , '".$member4."' , '".$mobile4."' , '".$member5."' , '".$mobile5."' , '".$member6."' , '".$mobile6."' , '".$member7."' , '".$mobile7."')");
+    VALUES ('".$name."' , '".$grpname."' , '".$email."' , '".$mobile."' , '".$insti."' , '".$size."' , '".$city."' , '".$url."' , '".$member2."' , '".$mobile2."' , '".$member3."' , '".$mobile3."' , '".$member4."' , '".$mobile4."' , '".$member5."' , '".$mobile5."' , '".$member6."' , '".$mobile6."' , '".$member7."' , '".$mobile7."')");
 
     $stmt->execute();
     echo "<script type='text/javascript'>alert('Registered Successfully');</script>";
