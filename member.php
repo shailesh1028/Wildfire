@@ -9,8 +9,8 @@
 		$i=2;
 		for($i ; $i<=$n ; $i++)
 		{
-			echo "<input type='text'   name='member".$i."' placeholder='Member_Name_".$i."'  required> <br>
-				<input type='number' name='mobile".$i."'   placeholder='Mobile No.' required> <br>";
+			echo "<input type='text'   name='member".$i."' class='form-items' placeholder='Member_Name_".$i."'  required> <br>
+				<input type='number' name='mobile".$i."' class='form-items'  placeholder='Mobile No.' required> <br>";
 		}
 	}
  ?>
