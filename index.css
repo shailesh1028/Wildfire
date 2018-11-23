@@ -1,26 +1,31 @@
 
 		body{
-
+			margin: 0;
+			background: #000;
+			overflow:hidden;
 		}
-		#Video{
+		/*#dbody{
+			background-size: cover;
+			background-image: url('img0.jpg');
+			background-repeat: no-repeat;
 			position: fixed;
 			right: 0;
 			bottom: 0;
 			min-width: 100%; 
     		min-height: 100%;
 			z-index: -1;
-		}
+		}*/
 		::-webkit-scrollbar { 
 		    display: none; 
 		}
 
 		#scroll{
-			position: absolute;
-			top: 90%;
+			position: relative;
+			bottom:25%;
 			left: 50%;
 			animation-name: move;
 			animation-iteration-count: infinite;
-			animation-duration: 0.5s;
+			animation-duration: 1s;
 			animation-timing-function:ease-out;
 		}
 		@keyframes move{
@@ -37,7 +42,7 @@
 			width: 3px;
 			background-color: white;
 			animation-name: trans-r;
-			animation-duration: 3s;
+			animation-duration: 2s;
 			animation-timing-function: ease-in;
 			animation-fill-mode: both;
 			animation-iteration-count: 1;		
@@ -49,7 +54,7 @@
 		#line-left{
 			position: absolute;
 			top: 0%;
-			left: 50%;
+			right: 50%;
 			bottom: 0%;
 			height: 100%;
 			width: 3px;
@@ -118,6 +123,7 @@
             left: 0%;
             background-color:rgba(49, 50, 51,0.6);
             overflow-y: scroll;
+            overflow-x: hidden;
         }
         #main-logo{
         	position: absolute;
@@ -132,22 +138,34 @@
         	padding: 10px;
         }
 		#main-sf{
-			position:absolute;
+			position:relative;
 			top: 10%;
 			left: 10%;
 			font-size: 40px;
+			font-family: 'Courgette', cursive;
 		}
 		#main-presents{
-			position:absolute;
-			left:24%;
-			top: 25%;
+			position:relative;
+			left:20%;
+			bottom: 2%;
+			font-family: 'Marvel', sans-serif;
+			font-size: 30px;
 		}
 		#main-wildfire{
-			position:absolute;
-			top: 50%;
-			/*bottom:15%;*/
-			left: 20%;
+			position:relative;
 			font-size: 80px;
+			left: 40%;
+			bottom: 30%;
+			font-family: 'Economica', sans-serif;
+			line-height: 100px;
+			letter-spacing: 10px;
+			animation-name: wild 2s infinite linear;
+			text-shadow:0 0 20px rgb(244, 211, 2);
+		}
+		@keyframes wild{
+			0% {color: white;}
+			100% {text-shadow: 3px 2px 60px rgb(244, 2, 2); color:white;}
+			/*100% {color: white;}*/
 		}
 		#main-dum{
 			position: absolute;
@@ -162,6 +180,7 @@
             left: 0%;
             background-color:rgba(49, 50, 51,0.6);
             display: none;
+            overflow-x: hidden;
         }
         #list-logo{
         	position: absolute;
@@ -182,6 +201,7 @@
         .list-items{
         	float:left;
         	color:white;
+        	font-family: 'Marvel', sans-serif;
         	font-size: 20px;
         	list-style-type: none;
         	padding-right: 60px;
@@ -204,16 +224,18 @@
         	left: 10%;
         	right: 10%;
         	padding: 10px black;
-        	border: 2px solid black;
+        	border: 2px solid rgb(195, 252, 63);
         	box-sizing: border-box;
         	border-radius: 10px;
         }
         #head-about{
+			font-family: 'Courgette', cursive;
         	position:relative;
         	top:0%;
         	left: 45%;
         }
         #p-about{
+        	font-family: 'Marvel', sans-serif;
         	position:relative;
         	top: 15%;
         	padding: 10px;
@@ -225,7 +247,7 @@
         	right: 10%;
         	margin-bottom: 20%;
         	padding: 10px black;
-        	border: 2px solid black;
+        	border: 2px solid rgb(195, 252, 63);
         	box-sizing: border-box;
         	border-radius: 10px;
         }
@@ -233,11 +255,13 @@
         	position:relative;
         	top:0%;
         	left: 45%;
+			font-family: 'Courgette', cursive;
         }
         #p-rules{
         	position:relative;
         	top: 8%;
         	padding: 10px;
+        	font-family: 'Marvel', sans-serif;
         }
         #register{
         	position:absolute;
@@ -251,77 +275,154 @@
         	position:relative;
         	top:0%;
         	left: 45%;
+			font-family: 'Courgette', cursive;
         }
         #reg-form{
         	position:relative;
         	top:8%;
-        	border: 2px solid white;
+        	border: 2px solid rgb(195, 252, 63);
         	border-radius: 10px;
         }
         .form-items{
         	position:relative;
-        	left: 35%;
+        	left: 25%;
 			padding-top: 10px;
 			margin-top: 10px;
-			width:35%;
+			width:60%;
 			border-radius: 5px;
+			font-family: 'Nunito', sans-serif;
+			outline: none;
+			font-weight: bolder;
+			box-shadow: none;
         }
 		#mem-size{
 			display:none;
 			position:relative;
-        	left: 35%;
+        	left: 25%;
 			padding-top: 10px;
 			margin-top: 10px;
-			width:35%;
+			width:60%;
 			border-radius: 5px;
-		}
-		.form-label{
-			position: relative;
-			left: 40%
+			font-family: 'Nunito', sans-serif;
+			outline: none;
+			font-weight: bolder;
+			box-shadow: none;
 		}
 		#reg-submit{
+			font-family: 'Nunito', sans-serif;
 			position:relative;
-        	left: 48%;
-			padding-top: 10px;
-			margin-top: 10px;
+        	left: 45%;
+			padding: 10px;
+			margin: 10px;
 			width:10%;
 			border-radius: 5px;
-			margin-bottom: 5px;
-			background-color: #996699;
+			background-color: #FEB729;
+			font-size: 15px;
+			font-weight: bold;
+			box-sizing: content-box;
+		}
+		#reg-submit:hover {
+		box-shadow: 0 0 8px white;
+		}
+		.form-items:hover {
+		box-shadow: 0 0 8px #FEB729;
+		}
+		#mem-size:hover {
+		box-shadow: 0 0 8px #FEB729;
 		}
 
-		.fadeout{
-			animation-name: fadeout;
-			animation-duration: 1s;
-			animation-iteration-count: 1;
-			animation-timing-function: linear;
-		}
-
-		@keyframes fadeout{
-			0% {
-				opacity: 1;
-				display: block;
-			}
-			100% {
-				opacity: 0;
-				display:none;
-			}
-		}
-
-		/*.fadein{
-			animation-name: fadein;
-			animation-duration: 1s;
-			animation-iteration-count: 1;
-			animation-timing-function: linear;
-		}
-
-		@keyframes fadein{
-			0% {
-				opacity: 0;
-				display: none;
-			}
-			100% {
-				opacity: 1;
-				display:block;
-			}
-		}*/
+@media only screen and (max-width: 600px) {
+	#main-sf{
+		top: 5%; left:5%;
+	}
+	#main-presents{
+		right: 0%;
+	}
+	#main-wildfire{
+		left: 7%;
+		bottom: 10%;
+		letter-spacing: 0px;
+	}
+	#scroll{
+		position: relative;
+		bottom: 5%;
+	}
+    #list-logo{
+        position: absolute;
+        top: 0%;
+        left: 20%;
+        height: 30px; 
+    }
+    #menu-list{
+        position:absolute;
+        top: 12%;
+        right:0%;
+        height: 15%; 
+    }
+    .list-items{
+        padding-right: 30px;
+    }
+        
+    #about{
+        position:absolute;
+        top:10%;
+        left: 10%;
+        right: 10%;
+    }
+    #head-about{
+    	position:relative;
+       	top:0%;
+        left: 40%;
+        }
+    #rules{
+        position:absolute;
+        top:80vh;
+        left: 10%;
+        right: 10%;
+    }
+    #head-rules{
+        position:relative;	
+        left: 40%;
+    }
+    #register{
+        position:absolute;
+        top: 200vh;
+        left: 10%;
+        right: 10%;
+    }
+    #head-reg{
+        position:relative;
+        top:0%;
+        left: 40%;
+        } 
+    #reg-form{
+        position:relative;
+        top:8%;
+        border: 2px solid rgb(195, 252, 63);
+        border-radius: 10px;
+    }
+    .form-items{
+       	position:relative;
+       	left: 15%;
+		padding-top: 10px;
+		margin-top: 10px;
+		width:65%;
+    }
+	#mem-size{
+		position:relative;
+       	left: 15%;
+		padding-top: 10px;
+		margin-top: 10px;
+		width:65%;
+	}
+	.form-label{
+		font-family: 'Nunito', sans-serif;
+		position: relative;
+		left: 40%;
+	}
+	#reg-submit{
+		position:relative;
+        left: 27%;
+		width:40%;
+	}
+}

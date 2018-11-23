@@ -1,6 +1,17 @@
 	$(document).ready(function(){
-
+		$('#loader-body').css('display','none');
 	});
+	/*$(window).load(function() {
+			alert('yes');
+     		
+     		/*$('#slideshow').css('display','block');
+     		$('#line-left').css('display','block');
+     		$('#line-top').css('display','block');
+     		$('#line-right').css('display','block');
+     		$('#line-bottom').css('display','block');
+     		$('#body-content').css('display','block');
+  	});*/
+
 
 	function msg(a){
 		if(a<6000000000 && a>10000000000)
@@ -8,10 +19,11 @@
 	}
 
 	function visible(){
-		$("#body-main").addClass('fadeout');
-	 	$("#body-area").css('display','block',function(){
-	 		$("#body-area").addClass("animated fadeIn delay-1s")});
-	    $("#body-area").scrollTop(0);
+		$("#body-main").fadeOut(1000).css('display','none');
+		$("#body-area").fadeIn(1000).css('display','block');
+	 	//$("#body-area").css('display','block',function(){
+	 		//$("#body-area").addClass("animated fadeIn delay-1s")});
+	    //$("#body-area").scrollTop(0);
 	}
 
 	function show_member(a){

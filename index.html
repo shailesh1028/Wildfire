@@ -7,17 +7,31 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 	<link rel="stylesheet" href="index.css">
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="loader.css">
+	<link rel="stylesheet" href="slideshow.css">
 	<script src="index.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Bilbo|Courgette|Economica|Marvel" rel="stylesheet">
+
 </head>
 <body >
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	 <script>
-	 	AOS.init();
-	 </script>
-	<video autoplay muted loop id="Video">
-	  <source src="p.mp4" type="video/mp4">
-	</video>
+	<div id="loader-body">
+		<div class="loader">
+		  	WILD WEST
+		    <span></span>
+		    <span></span>
+		    <span></span>
+		    <span></span>
+		</div>
+	</div>
+	
+	<ul class="slideshow">
+	  <li><span>Image 01</span></li>
+	  <li><span>Image 02</span></li>
+	  <li><span>Image 03</span></li>
+	  <li><span>Image 04</span></li>
+	  <li><span>Image 05</span></li>
+	  <li><span>Image 06</span></li>
+	</ul>
 	
 	<div id="line-right"></div>
 	<div id="line-left"></div>
@@ -26,15 +40,15 @@
 	
 
 	<div id="body-content">
-		<div id="body-main" class="animated zoomIn delay-3.5s" onscroll="visible()" >
+		<div id="body-main" class="animated zoomIn" onscroll="visible()">
 			<div id="main-logo">
 			<a href="https://2019.beta.springfest.in/" style="float: right;"><img class="logo" src="sf-logo.png"></a>
 			<a href="http://www.iitkgp.ac.in/" style="float: left;"><img class="logo" src="kgp-logo.png"></a>
 			</div>
-			<h2 class="animated fadeIn delay-3s" id="main-sf">Spring Fest </h2> <br>
-			<h4 class="animated fadeIn delay-3s" id="main-presents"> Presents</h4><br>
-			<h1 class="animated rollIn delay-3s" id="main-wildfire">WildFire</h1>
-			<div id="scroll">
+			<h2 class="animated fadeIn delay-3s" id="main-sf">Spring Fest 2019 </h2> <br>
+			<h4 class="animated fadeIn delay-3s" id="main-presents"> Presents </h4><br>
+			<h1 class="animated zoomIn delay-3s" id="main-wildfire"> WILDFIRE </h1>
+			<div id="scroll" onclick="visible()">
 				<img src="scroll.png" height="20px" width="20px">
 			</div>
 			<h1 id="main-dum"> a</h1>
