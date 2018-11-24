@@ -21,7 +21,7 @@
 
 		#scroll{
 			position: relative;
-			bottom:25%;
+			bottom:10%;
 			left: 50%;
 			animation-name: move;
 			animation-iteration-count: infinite;
