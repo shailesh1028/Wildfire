@@ -217,6 +217,7 @@
         	right: 0%;
         	bottom:0%;
         	overflow-y: scroll;
+        	overflow-x: hidden;
         }
         #about{
         	position:absolute;
@@ -269,7 +270,9 @@
         	left: 10%;
         	right: 10%;
         	box-sizing: border-box;
-        	margin-bottom: 10%; 
+        	margin-bottom: 10%;
+        	border: 2px solid rgb(195, 252, 63);
+        	border-radius: 10px;
         }
         #head-reg{
         	position:relative;
@@ -280,8 +283,6 @@
         #reg-form{
         	position:relative;
         	top:8%;
-        	border: 2px solid rgb(195, 252, 63);
-        	border-radius: 10px;
         }
         .form-items{
         	position:relative;
@@ -386,7 +387,7 @@
     }
     #register{
         position:absolute;
-        top: 200vh;
+        top: 240vh;
         left: 10%;
         right: 10%;
     }
@@ -422,7 +423,7 @@
 	}
 	#reg-submit{
 		position:relative;
-        left: 27%;
+        left: 20%;
 		width:40%;
 	}
 }
