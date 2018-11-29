@@ -421,7 +421,7 @@
         	position: absolute;
         	top: 0%;
         	left: 0%;
-        	height: 10%;
+        	margin-bottom: 10px;
         }
         .li-logo{
         	float:left;
@@ -432,6 +432,7 @@
         	position:absolute;
         	top: 12%;
         	right:0%;
+        	margin-bottom: 10px;
         }
         .list-items{
         	float:left;
@@ -448,7 +449,7 @@
         }
         #body-sum{
         	position: absolute;
-        	top: 28%;
+        	top: 30%;
         	left:0%;
         	right: 0%;
         	bottom:0%;
