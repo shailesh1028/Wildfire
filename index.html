@@ -112,11 +112,11 @@
 				<h2 id="head-reg">Register</h2>
 				<div id="reg-form">
 
-				<form>
+				<form id="input_form">
 					<input type="text"  id="name" class="form-items" name="name" placeholder="Name"  required> <br>
 					<input type="text"  id="gname" class="form-items" name="grp-name" placeholder="Group-name"  required> <br>
-					<input type="number" id="mobile" class="form-items" name="mobile" onchange="msg(this.value)"    placeholder="Mobile No." required> <br>
-					<input type="email"  id="email" class="form-items" name="email"    placeholder="Email" required> <br>
+					<input type="number" id="mobile" class="form-items" name="mobile" onblur="msg(this.value)"    placeholder="Mobile No." required> <br>
+					<input type="email"  id="email" class="form-items" name="email"    onblur="isEmail(this.value)" placeholder="Email" required> <br>
 					<input type="text"  id="insti" class="form-items" name="insti"    placeholder="Name of Institution" required> <br>
 					<select name="size" id="size" class="form-items" onchange="show_member(this.value)" required>
 
@@ -129,6 +129,7 @@
 					  	<option value="6">6</option>
 					  	<option value="7">7</option>
 					</select> <br>
+					<div id="members_box"></div>
 					<input type="text" id="city" class="form-items" name="city"     placeholder="City"  required> <br>
 					<input type="url" id="url" class="form-items" name="url" placeholder="Url Of the Video"> <br>
 					<div id="mem_size"></div>
