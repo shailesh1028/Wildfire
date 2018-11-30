@@ -110,13 +110,15 @@
 	}
 
 	function show_member(a){
-		$.post("member.php",{
-			n:a
-		},
-		    function(data){
-		    	$("#mem_size").css('display','block');
+		$.ajax({
+			type: "POST",
+			url: "./member.php",
+			data: {
+				"n" : a
+			},
+			success: function (data) {
+				$("#mem_size").css('display','block');
 		        $("#mem_size").html(data);
-	    });
-	 }
-
-	 
+			}
+		})
+	}
