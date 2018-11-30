@@ -109,13 +109,13 @@
 			<div id="register">
 				<h2 id="head-reg">Register</h2>
 				<div id="reg-form">
-				<form id="" action="index.php" method="post" target="_self">
-					<input type="text"   class="form-items" name="name" placeholder="Name"  required> <br>
-					<input type="text"   class="form-items" name="grp-name" placeholder="Group-name"  required> <br>
-					<input type="number" class="form-items" name="mobile" onchange="msg(this.value)"    placeholder="Mobile No." required> <br>
-					<input type="email"  class="form-items" name="email"    placeholder="Email" required> <br>
-					<input type="text"   class="form-items" name="insti"    placeholder="Name of Institution" required> <br>
-					<select name="size" class="form-items" onchange="show_member(this.value)" required>
+				<form>
+					<input type="text"  id="name" class="form-items" name="name" placeholder="Name"  required> <br>
+					<input type="text"  id="gname" class="form-items" name="grp-name" placeholder="Group-name"  required> <br>
+					<input type="number" id="mobile" class="form-items" name="mobile" onchange="msg(this.value)"    placeholder="Mobile No." required> <br>
+					<input type="email"  id="email" class="form-items" name="email"    placeholder="Email" required> <br>
+					<input type="text"  id="insti" class="form-items" name="insti"    placeholder="Name of Institution" required> <br>
+					<select name="size" id="size" class="form-items" onchange="show_member(this.value)" required>
 						<option value="null" selected>--Team Size--</option>
 					  	<option value="1">1</option>
 					  	<option value="2">2</option>
@@ -125,10 +125,11 @@
 					  	<option value="6">6</option>
 					  	<option value="7">7</option>
 					</select> <br>
-					<input type="text" class="form-items" name="city"     placeholder="City"  required> <br>
-					<input type="url" class="form-items" name="url" placeholder="Url Of the Video"> <br>
+					<input type="text" id="city" class="form-items" name="city"     placeholder="City"  required> <br>
+					<input type="url" id="url" class="form-items" name="url" placeholder="Url Of the Video"> <br>
 					<div id="mem_size"></div>
 					<input type="submit" id="reg-submit" name="" value="Submit">
+					<p id="success_msg"></p>
 				</form>
 				</div>
 			</div>
