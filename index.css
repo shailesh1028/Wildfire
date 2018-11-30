@@ -18,6 +18,10 @@
 		::-webkit-scrollbar { 
 		    display: none; 
 		}
+		.error{
+			box-shadow: 0 0 15px #fd0703;
+			border-color: #fd0703;
+		}
 		@keyframes move{
 			0% {transform: translateY(0px);}
 			50% {transform: translateY(+20px);}
@@ -364,14 +368,14 @@
         }*/
 		#main-sf{
 			position:relative;
-			top: 12%;
+			top: 15%;
 			left: 5%;
 			font-size: 35px;
 		}
 		#main-presents{
 			position:relative;
 			left:20%;
-			top: 2%;
+			top: 5%;
 			font-family: 'Marvel', sans-serif;
 			font-size: 28px;
 		}
