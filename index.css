@@ -440,7 +440,14 @@
         	top: 5em;
         	right:0%;
         	margin-bottom: 10px;
-        }
+		}
+		.menu-items-list {
+			padding: 0;
+    		left: 25%;
+    		position: fixed;
+    		/* transform: translateX(-50%); */
+    		width: 100%;
+		}
         .list-items{
         	float:left;
         	color:white;
