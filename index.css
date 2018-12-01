@@ -425,7 +425,9 @@
         	position: absolute;
         	top: 0%;
         	left: 0%;
-        	margin-bottom: 10px;
+			margin-bottom: 10px;
+			padding: 0;
+			width: 100%;
         }
         .li-logo{
         	float:left;
@@ -433,8 +435,9 @@
         	list-style-type: none;
         }
         #menu-list{
-        	position:absolute;
-        	top: 12%;
+			position: relative;
+			width: 100%;
+        	top: 5em;
         	right:0%;
         	margin-bottom: 10px;
         }
