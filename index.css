@@ -244,7 +244,8 @@
         	font-family: 'Marvel', sans-serif;
         	position:relative;
         	top: 15%;
-        	padding: 10px;
+			padding: 0 20px 30px 20px;
+			font-size: 1.3rem;
         }
         #rules{
         	position:relative;
@@ -267,7 +268,8 @@
         	position:relative;
         	top: 8%;
         	padding: 10px;
-        	font-family: 'Marvel', sans-serif;
+			font-family: 'Marvel', sans-serif;
+			font-size: 1.2rem;
         }
         #register{
         	position:relative;

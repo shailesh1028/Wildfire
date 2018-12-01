@@ -4,6 +4,7 @@ var num = 0;
 			$("form").submit(function(e){
 				e.preventDefault();
 			$("#reg_submit").attr('disabled','disabled');
+			$("#reg_submit").val('Submitting');
 			 name2="";
 			mobile2="";
 			name3="";
@@ -102,7 +103,6 @@ var num = 0;
 					num = 0;
 				}
 			}
-			console.log(num);
 			if (num == 0) {
 				$.ajax({
 					url: "https://script.google.com/macros/s/AKfycbz4ggyhtL57l7Ssm2mKwIWhTTadqgkfltpMj02g2Uq_BR4CxmY/exec",
@@ -136,7 +136,8 @@ var num = 0;
 						  $('.form-items').removeClass('error');
 						  $('.numbercheck').attr('placeholder', "Mobile");
 						  $('#email').attr('placeholder', "Email");
-						  $("#size option[value=null]").prop("selected", true); 
+						  $("#size option[value=]").prop("selected", true); 
+						  $("#reg_submit").val('Submit');
 					  }
 					
 				});
