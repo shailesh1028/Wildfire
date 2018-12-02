@@ -38,7 +38,7 @@ var num = 0;
 					num = 0;
 				}
 			}
-			else if(n>2){
+			if(n>2){
 				name3=$("#name3").val();
 				mobile3=$("#mobile3").val();
 				if(mobile3<6000000000 || mobile3>10000000000) {
@@ -51,7 +51,7 @@ var num = 0;
 					num = 0;
 				}
 			}
-			else if(n>3){
+			 if(n>3){
 				name4=$("#name4").val();
 				mobile4=$("#mobile4").val();
 				if(mobile4<6000000000 || mobile4>10000000000) {
@@ -64,7 +64,7 @@ var num = 0;
 					num = 0;
 				}
 			}
-			else if(n>4){
+			 if(n>4){
 				name5=$("#name5").val();
 				mobile5=$("#mobile5").val();
 				if(mobile5<6000000000 || mobile5>10000000000) {
@@ -77,7 +77,7 @@ var num = 0;
 					num = 0;
 				}
 			}
-			else if(n>5){
+			 if(n>5){
 				name6=$("#name6").val();
 				mobile6=$("#mobile6").val();
 				if(mobile6<6000000000 || mobile6>10000000000) {
@@ -90,7 +90,7 @@ var num = 0;
 					num = 0;
 				}
 			}
-			else if(n>6){
+			 if(n>6){
 				name7=$("#name7").val();
 				mobile7=$("#mobile7").val();
 				if(mobile7<6000000000 || mobile7>10000000000) {
